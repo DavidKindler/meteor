@@ -6,6 +6,12 @@
   "repository": "no warn",
   "dependencies": {
     "jsdoc": "jsdoc3/jsdoc#99fb8a00",
-    "canonical-json": "0.0.4"
-  }
+    "canonical-json": "0.0.4",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
